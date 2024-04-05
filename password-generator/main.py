@@ -58,6 +58,7 @@ def save():
             password_entry.delete(0, END)
 
 
+
 # ------------------------------------UI SETUP-------------------------------
 window = Tk()
 window.title("Password Manager")
@@ -96,5 +97,6 @@ generate_password_button.grid(column=2, row=3)
 
 add_button = Button(text="Add", width=36, command=save)
 add_button.grid(column=1, row=4, columnspan=2)
+
 
 window.mainloop()
