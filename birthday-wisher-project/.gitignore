@@ -1,0 +1,6 @@
+# created by virtualenv automatically
+.venv/Lib
+Lib
+email_data.csv
+.venv
+birthdays_data.csv
