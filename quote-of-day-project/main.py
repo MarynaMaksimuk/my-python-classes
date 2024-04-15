@@ -12,7 +12,7 @@ password = my_data[0]["password"]
 
 now = dt.datetime.now()
 day_of_week = now.weekday()
-if day_of_week == 4:
+if day_of_week == 3:
     with open("quotes.txt") as data_file:
         data = data_file.readlines()
         today_quote = random.choice(data)
