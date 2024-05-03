@@ -13,6 +13,7 @@ today_tuple = (today.month, today.day)
 
 data = pandas.read_csv("birthdays_data.csv")
 
+
 birthday_dict = {(record["month"], record["day"]): record for (index, record) in data.iterrows()}
 if today_tuple in birthday_dict:
     birthday_person = birthday_dict[today_tuple]

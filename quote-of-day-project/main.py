@@ -3,12 +3,10 @@ import datetime as dt
 import random
 import pandas
 
-
 data = pandas.read_csv("email_data.csv")
 my_data = data.to_dict(orient="records")
 email = my_data[0]["my_email"]
 password = my_data[0]["password"]
-
 
 now = dt.datetime.now()
 day_of_week = now.weekday()

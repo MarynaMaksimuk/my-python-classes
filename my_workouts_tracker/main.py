@@ -15,7 +15,6 @@ basic_auth = os.environ["basic_auth"]
 sheety_auth_header = {
     "Authorization": basic_auth
 }
-
 exercise_text = input("Tell me which exercise you did: ")
 
 headers = {
@@ -30,6 +29,7 @@ request_param = {
     "height_cm": MY_HEIGHT,
     "age": MY_AGE
 }
+
 
 response = requests.post(EXERCISE_ENDPOINT, json=request_param, headers=headers)
 result = response.json()

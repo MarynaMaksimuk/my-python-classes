@@ -14,7 +14,6 @@ user_params = {
     "agreeTermsOfService": "yes",
     "notMinor": "yes",
 }
-
 response = requests.post(url=pixela_endpoint, json=user_params)
 graph_endpoint = f"{pixela_endpoint}/{USER_NAME}/graphs"
 
@@ -25,11 +24,9 @@ graph_config = {
     "type": "int",
     "color": "ajisai",
 }
-
 headers = {
     "X-USER-TOKEN": TOKEN
 }
-
 requests.post(url=graph_endpoint, json=graph_config, headers=headers)
 today = datetime.now()
 # today = datetime(year=2024, month=4, day=24)
